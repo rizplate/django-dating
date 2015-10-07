@@ -92,7 +92,7 @@ MANAGERS = ADMINS
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
     # Raises ImproperlyConfigured exception if DATABASE_URL not in os.environ
-    'default': env.db("DATABASE_URL", default="postgres://localhost/django_dating"),
+    'default': env.db("DATABASE_URL", default="postgres://dating:djdating@localhost:5433/dating"),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
@@ -183,7 +183,7 @@ MEDIA_URL = '/media/'
 
 # URL Configuration
 # ------------------------------------------------------------------------------
-ROOT_URLCONF = 'config.urls'
+ROOT_URLCONF = 'config.urls.common'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#wsgi-application
 WSGI_APPLICATION = 'config.wsgi.application'
