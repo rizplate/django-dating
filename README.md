@@ -10,3 +10,10 @@ Django REST API backend for a Dating platform. This project is built using an AP
 * Block members
 * Photo Gallary
 * Meet me
+
+## Open Source Used
+* Celery
+* RabbitMQ
+* Django
+* Django Rest Framework
+* Foundation
